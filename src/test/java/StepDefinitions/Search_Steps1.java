@@ -30,7 +30,7 @@ public class Search_Steps1 {
 		System.out.println("step4"+"Driver stops the car");
 	}
 
-	@Then("User pays the total fare of (\\d+) INR")
+	@Then("User pays the total fare of {int} INR")
 	public void user_pays_the_total_fare_of_inr(Integer price) {
 	    // Write code here that turns the phrase above into concrete actions
 		System.out.println("step5"+"User pays an amount of total fare"+price);

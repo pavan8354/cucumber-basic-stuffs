@@ -16,11 +16,11 @@
 #""
 ## (Comments)
 #Sample Feature Definition Template
-@tag
+
 Feature: Ola booking feature
   I want to use this template for my feature file
 
-  @tag1
+@Smoke
   Scenario: user wants to Book the cab in ola
     Given I want to book the "Sedan" Cab in ola
     Then User wants to travel from "Bangalore" to "Mangalore"
@@ -29,5 +29,23 @@ Feature: Ola booking feature
     Then User pays the total fare of 1000 INR 
     Then User recieves the cashback of 10000 INR in Wallet
     
-
+@Regression @Smoke
+  Scenario: user wants to Book the cab in ola
+    Given I want to book the "MINI" Cab in ola
+    Then User wants to travel from "Bangalore" to "Mysore"
+    Then Driver rides the Car
+    Then Driver ends the journey
+    Then User pays the total fare of 10000 INR 
+    Then User recieves the cashback of 100000 INR in Wallet
+ 
+ @Production   
+    Scenario: user wants to Book the cab in ola
+    Given I want to book the "MINI" Cab in ola
+    Then User wants to travel from "Bangalore" to "Mysore"
+    Then Driver rides the Car
+    Then Driver ends the journey
+    Then User pays the total fare of 5000 INR 
+    Then User recieves the cashback of 2500 INR in Wallet
+    
+    
   

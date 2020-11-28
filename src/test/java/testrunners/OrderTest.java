@@ -8,11 +8,14 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		
-		features = {"src\\test\\java\\Amazon_Search\\search.feature"},
-		glue = {"StepDefinitions"},
+		features = {"src\\test\\java\\Amazon_Feature\\order.feature"},
+		glue = {"Step_Definitions"},
 		plugin = {"pretty"}
 		
 		)
-public class AmazonTestrunner {
+
+
+
+public class OrderTest {
 
 }

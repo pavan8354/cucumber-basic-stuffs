@@ -1,0 +1,82 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-12-06T07:28:53.871Z",
+        "line": 3,
+        "name": "User Registration with different data",
+        "description": "",
+        "id": "user-registration;user-registration-with-different-data",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 24001300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on Registration page",
+            "match": {
+              "location": "step_definition.userregistration.user_is_on_registration_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 14000800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User wants to fill following details",
+            "match": {
+              "location": "step_definition.userregistration.user_wants_to_fill_following_details(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Pavan",
+                  "Gowda",
+                  "28",
+                  "pavan235@gmail.com",
+                  "28000",
+                  "Bangalore"
+                ]
+              },
+              {
+                "cells": [
+                  "Maruthi",
+                  "Gowda",
+                  "29",
+                  "mar23@gmail.com",
+                  "29000",
+                  "Mangalore"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3000200,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user registration is successfull",
+            "match": {
+              "location": "step_definition.userregistration.user_registration_is_successfull()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "User Registration",
+    "description": "",
+    "id": "user-registration",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Registration.feature",
+    "tags": []
+  }
+]

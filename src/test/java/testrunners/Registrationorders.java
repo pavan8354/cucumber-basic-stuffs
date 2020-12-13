@@ -8,9 +8,8 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 
-		features = {"src\\test\\java\\Amazon_Feature\\order.feature"},
-		glue = {"Step_Definitions","myhooks"},
-		tags = "@Smoke or @Regression",
+		features = {"src\\test\\resources\\Registration.feature"},
+		glue = {"step_definition"},
 		plugin = {"pretty" ,"json:target/Myreports/reports.json","junit:target/Myreports/reports.xml"
 				
 		},
@@ -22,6 +21,9 @@ import io.cucumber.junit.CucumberOptions;
 
 		)
 		
-public class OrderTest {
+
+
+
+public class Registrationorders {
 
 }
